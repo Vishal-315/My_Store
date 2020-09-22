@@ -6,7 +6,7 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from payTm import Checksum
 # Create your views here.
-MERCHANT_KEY = 'e!Dgr!PI_7joHzbm'
+MERCHANT_KEY = 'Your_Merchant_Key'
 def index(request):  
     # allProds=[[products,range(1,nSlides),nSlides],
             #   [products,range(1,nSlides),nSlides]]
@@ -110,7 +110,7 @@ def checkout(request):
         # return render(request, "shop/checkout.html",{'thank':thank,  'id':id})
         param_dict = {
 
-                'MID':'GEXhUK50248506247015',
+                'MID':'Your_Merchant_Id',
                 'ORDER_ID': str(id),
                 'TXN_AMOUNT': str(amount),
                 'CUST_ID': email,
